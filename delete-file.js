@@ -27,7 +27,7 @@ if (fs.existsSync("./output/temp.txt")) {
   //unlinkSync() => synchronous delete
 // file delete kore tarpor porer line e jay...file deleted
 
-/* abae delete korar try(error demonstration) */
+/* abar delete korar try(error demonstration) */
 
 try {
   fs.unlinkSync("./output/temp.txt");
