@@ -100,6 +100,15 @@ function getCategory(filename) {
 
 // (1) messy folder er sob file read kora
 const files = fs.readdirSync(sourceDir);
+if (files.length === 0) {
+    console.log("No files to work on!!");
+    return;
+  }
+  console.log(`found ${files.length} files to organize \n`);
+  const stats = {
+    total: 0,
+    byCategory: {},
+  };
 //(2) file er size, extension, category Check..
 const stat = fs.statSync(sourcePath);
 const category = getCategory(file);
